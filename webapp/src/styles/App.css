@@ -1,0 +1,15 @@
+* {
+  background-color: #FFF;
+  color: #000;
+}
+
+.imagens {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+.ropape {
+  text-align: center;
+}
