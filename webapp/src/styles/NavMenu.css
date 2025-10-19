@@ -1,0 +1,7 @@
+*, a {
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
