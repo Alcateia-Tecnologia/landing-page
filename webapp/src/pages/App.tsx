@@ -1,15 +1,19 @@
 import NavMenu from "../components/NavMenu";
+import Rodape from "../components/Rodape";
 import "../styles/App.css";
 
 function App() {
   return (
     <>
-      <div className="home">
-        <NavMenu />
-        <footer className="rodape">
-          Copyright © 2025 Alcateia Tecnologia. Todos os direitos reservados.
-        </footer>
-      </div>
+      <NavMenu />
+      <body>
+        <h1>Bem-vindo à Alcateia Tecnologia</h1>
+        <p>Sua parceira em soluções tecnológicas inovadoras.</p>
+        <h2>Sobre</h2>
+        <h2>Projetos</h2>
+        <h2>Contatos</h2>
+      </body>
+      <Rodape />
     </>
   );
 }
