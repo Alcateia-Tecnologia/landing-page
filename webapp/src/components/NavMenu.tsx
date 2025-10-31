@@ -1,28 +1,29 @@
-import React from "react";
 import "../styles/NavMenu.css";
 
-const NavMenu: React.FC = () => {
+export default function NavMenu() {
   return (
-    <>
-      <nav className="nav-menu">
-        <img src="iv.svg" alt="Identidade Visual Alcateia" />
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Sobre</a>
-          </li>
-          <li>
-            <a href="#">Projetos</a>
-          </li>
-          <li>
-            <a href="#">Contatos</a>
-          </li>
-        </ul>
-      </nav>
-    </>
+    <nav className="nav-menu" aria-label="Menu principal">
+      <a href="#home" className="brand">
+        <img src="/iv.svg" alt="Alcateia" />
+        <span>Alcateia Tecnologia</span>
+      </a>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#sobre">Sobre</a>
+        </li>
+        <li>
+          <a href="#mvv">Propósito</a>
+        </li>
+        <li>
+          <a href="#projetos">Projetos</a>
+        </li>
+        <li>
+          <a href="#contatos">Contatos</a>
+        </li>
+      </ul>
+    </nav>
   );
-};
-
-export default NavMenu;
+}
