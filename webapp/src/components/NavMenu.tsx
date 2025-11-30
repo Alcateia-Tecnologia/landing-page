@@ -15,9 +15,6 @@ export default function NavMenu() {
           <a href="#sobre">Sobre</a>
         </li>
         <li>
-          <a href="#mvv">Propósito</a>
-        </li>
-        <li>
           <a href="#projetos">Projetos</a>
         </li>
         <li>
