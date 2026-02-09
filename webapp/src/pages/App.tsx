@@ -10,10 +10,10 @@ export default function App() {
         <header className="hero" id="home">
           <div className="container hero-grid">
             <div className="hero-content">
-              <span className="badge">Tecnologia com impacto real</span>
+              <span className="badge">ALCATEIA</span>
               <h1>Soluções digitais simples para problemas que importam.</h1>
               <p className="subtitle">
-                Na Alcateia, design e engenharia trabalham juntos para criar
+                Na ALCATEIA, design e engenharia trabalham juntos para criar
                 produtos acessíveis, intuitivos e confiáveis para pessoas,
                 equipes e cidades.
               </p>

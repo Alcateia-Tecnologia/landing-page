@@ -8,7 +8,7 @@ export default function NavMenu() {
           <span className="brand-mark" aria-hidden="true">
             <img src="/iv.svg" alt="" />
           </span>
-          <span className="brand-name">Alcateia Tecnologia</span>
+          <span className="brand-name">ALCATEIA</span>
         </a>
 
         <ul className="nav-links">

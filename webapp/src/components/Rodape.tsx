@@ -7,7 +7,7 @@ export default function Rodape() {
     <footer className="rodape">
       <div className="container footer-grid">
         <div className="footer-about">
-          <strong>Alcateia Tecnologia</strong>
+          <strong>ALCATEIA</strong>
           <p>
             Transformamos ideias em produtos digitais com foco em simplicidade,
             impacto e confiança.
@@ -29,8 +29,7 @@ export default function Rodape() {
       </div>
 
       <div className="container footer-bottom">
-        Copyright © {anoAtual} Alcateia Tecnologia. Todos os direitos
-        reservados.
+        Copyright © {anoAtual} Alcateia. Todos os direitos reservados.
       </div>
     </footer>
   );
