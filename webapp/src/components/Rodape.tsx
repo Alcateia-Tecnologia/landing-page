@@ -10,7 +10,7 @@ export default function Rodape() {
           <strong>Alcateia Tecnologia</strong>
           <p>
             Transformamos ideias em produtos digitais com foco em simplicidade,
-            impacto e confianca.
+            impacto e confiança.
           </p>
         </div>
 
