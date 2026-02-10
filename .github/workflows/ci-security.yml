@@ -1,0 +1,47 @@
+name: CI Security Gate
+
+on:
+  push:
+    branches:
+      - main
+      - "cursor/**"
+      - "feature/**"
+      - "fix/**"
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  lint-build-audit:
+    name: lint-build-audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: webapp/package-lock.json
+
+      - name: Install dependencies
+        working-directory: webapp
+        run: npm ci
+
+      - name: Lint source
+        working-directory: webapp
+        run: npm run lint
+
+      - name: Build production bundle
+        working-directory: webapp
+        run: npm run build
+
+      - name: Audit dependencies (moderate+)
+        working-directory: webapp
+        run: npm audit --audit-level=moderate
