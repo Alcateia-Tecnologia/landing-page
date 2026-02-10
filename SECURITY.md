@@ -27,7 +27,7 @@ We aim to acknowledge reports within 72 hours and provide an update after triage
 ## Security controls configured in code
 
 - CI security gate (lint, build, dependency audit)
-- Secret scanning in CI (Gitleaks)
+- Secret scanning in CI (TruffleHog OSS)
 - Static analysis (CodeQL)
 - Automated dependency update monitoring (Dependabot)
 
