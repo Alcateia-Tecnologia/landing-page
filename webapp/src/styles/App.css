@@ -71,6 +71,14 @@ p {
   padding: 88px 0;
 }
 
+#home,
+#sobre,
+#mvv,
+#projetos,
+#contatos {
+  scroll-margin-top: 94px;
+}
+
 .section.alt {
   background: linear-gradient(180deg, rgba(234, 238, 255, 0.82), #f7f9ff);
   border-top: 1px solid rgba(138, 151, 201, 0.2);
@@ -494,6 +502,10 @@ p {
     padding: 72px 0;
   }
 
+  .container {
+    padding: 0 16px;
+  }
+
   .hero {
     padding: 92px 0 64px;
   }
@@ -513,5 +525,34 @@ p {
 
   .contact-panel {
     padding: 22px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 0 14px;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .hero {
+    padding: 84px 0 54px;
+  }
+
+  .badge {
+    font-size: 0.74rem;
+    letter-spacing: 0.04em;
+  }
+
+  .card,
+  .panel-card,
+  .contact-panel {
+    padding: 18px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 }
