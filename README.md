@@ -1,44 +1,71 @@
-# 🐺 Alcateia Tecnologia
+# Alcateia Landing Page
 
-> **Onde líderes caçam juntos.**  
-> Empresa de tecnologia e inovação focada em criar soluções digitais acessíveis que simplificam o dia a dia e conectam pessoas, empresas e cidades.
+Landing page institucional da Alcateia Tecnologia, com destaque para produtos e conversão de contato comercial.
 
-![Status](https://img.shields.io/badge/status-online-00b37e)
-![License](https://img.shields.io/badge/license-Proprietária-red)
-![Feito%20por](https://img.shields.io/badge/feito%20por-Alcateia%20Tecnologia-00b37e)
+## Sobre
 
----
+Este repositório contém a aplicação web da landing da Alcateia, com foco em:
 
-## 🌐 Sobre o Projeto
+- posicionamento de marca;
+- apresentação de projetos;
+- encaminhamento para contato;
+- página dedicada do produto `SOS Maringá`.
 
-Este repositório contém o código-fonte da **landing page institucional da Alcateia Tecnologia**, desenvolvida para apresentar a marca, seus valores e seus projetos — como o **SOS Maringá**, o primeiro app da empresa.
+## Stack
 
-A página é leve, responsiva e moderna, com o objetivo de transmitir a identidade visual da Alcateia e servir como hub central dos produtos e iniciativas da empresa.
+| Camada | Tecnologia |
+| --- | --- |
+| Front-end | React 19 + TypeScript |
+| Build | Vite 7 |
+| Roteamento | react-router-dom |
+| Qualidade | ESLint |
+| Deploy | Vercel |
 
----
+## Estrutura principal
 
-## 🧩 Seções Principais
+```text
+landing-page/
+├─ webapp/
+│  ├─ src/
+│  │  ├─ components/
+│  │  ├─ pages/
+│  │  │  ├─ App.tsx
+│  │  │  ├─ SosMaringaPage.tsx
+│  │  │  └─ main.tsx
+│  │  └─ styles/
+│  ├─ package.json
+│  └─ vite.config.ts
+├─ DOCUMENTACAO_ATUAL.md
+├─ SECURITY.md
+└─ README.md
+```
 
-- **Home (Hero Section)** — frase principal e logo da Alcateia.  
-- **Sobre** — missão, visão e valores.  
-- **Projetos** — lista dos produtos e soluções da empresa (ex.: SOS Maringá).  
-- **Contato** — formulário e e-mail de contato.
+## Executar localmente
 
----
-
-## ⚙️ Tecnologias
-
-| Categoria | Stack |
-|------------|--------|
-| **Front-end** | [React](https://react.dev/) + [Vite](https://vitejs.dev/) |
-| **Estilos** | [Tailwind CSS](https://tailwindcss.com/) |
-| **Hospedagem** | [Vercel](https://vercel.com/) |
-| **Ícones** | [Lucide](https://lucide.dev/) |
-
----
-
-## 🚀 Como Executar
-
-### 1. Clonar o repositório
 ```bash
-git clone https://github.com/Alcateia-Tecnologia/alcateia-landing.git
+cd webapp
+npm install
+npm run dev
+```
+
+## Comandos úteis
+
+```bash
+cd webapp
+npm run lint
+npm run build
+npm run preview
+```
+
+## Rotas atuais
+
+- `/` -> landing principal
+- `/projetos/sos-maringa` -> página dedicada do produto SOS Maringá
+
+## Deploy
+
+Deploy de produção via Vercel.
+
+Ambiente já validado no projeto:
+
+- `https://alcateiatec.vercel.app`
