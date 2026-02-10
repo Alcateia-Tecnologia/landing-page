@@ -1,6 +1,7 @@
 import NavMenu from "../components/NavMenu";
 import Rodape from "../components/Rodape";
 import "../styles/App.css";
+import { Link } from "react-router-dom";
 
 export default function App() {
   return (
@@ -141,6 +142,9 @@ export default function App() {
                   <li>Navegação simples para situações críticas</li>
                   <li>Acesso em segundos aos canais essenciais</li>
                 </ul>
+                <Link to="/projetos/sos-maringa" className="link">
+                  Conhecer página completa do produto
+                </Link>
               </article>
               <article className="card project-card">
                 <p className="project-tag">Próximo passo</p>

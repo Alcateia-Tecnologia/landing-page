@@ -15,9 +15,9 @@ export default function Rodape() {
         </div>
 
         <div className="footer-links">
-          <a href="#sobre">Sobre</a>
-          <a href="#projetos">Projetos</a>
-          <a href="#contatos">Contato</a>
+          <a href="/#sobre">Sobre</a>
+          <a href="/#projetos">Projetos</a>
+          <a href="/#contatos">Contato</a>
         </div>
 
         <div className="footer-contact">

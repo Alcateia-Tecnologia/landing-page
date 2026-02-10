@@ -38,7 +38,7 @@ export default function NavMenu() {
   return (
     <nav className="nav-menu" aria-label="Menu principal">
       <div className="container nav-inner">
-        <a href="#home" className="brand">
+        <a href="/" className="brand">
           <span className="brand-mark" aria-hidden="true">
             <img src="/iv.svg" alt="" />
           </span>
@@ -47,21 +47,21 @@ export default function NavMenu() {
 
         <ul className="nav-links">
           <li>
-            <a href="#sobre">Sobre</a>
+            <a href="/#sobre">Sobre</a>
           </li>
           <li>
-            <a href="#mvv">Essência</a>
+            <a href="/#mvv">Essência</a>
           </li>
           <li>
-            <a href="#projetos">Projetos</a>
+            <a href="/#projetos">Projetos</a>
           </li>
           <li>
-            <a href="#contatos">Contato</a>
+            <a href="/#contatos">Contato</a>
           </li>
         </ul>
 
         <div className="nav-actions">
-          <a href="#contatos" className="nav-cta">
+          <a href="/#contatos" className="nav-cta">
             Vamos conversar
           </a>
 
@@ -86,19 +86,19 @@ export default function NavMenu() {
         aria-hidden={!menuAberto}
       >
         <div className="container mobile-menu-inner">
-          <a href="#sobre" onClick={fecharMenu}>
+          <a href="/#sobre" onClick={fecharMenu}>
             Sobre
           </a>
-          <a href="#mvv" onClick={fecharMenu}>
+          <a href="/#mvv" onClick={fecharMenu}>
             Essência
           </a>
-          <a href="#projetos" onClick={fecharMenu}>
+          <a href="/#projetos" onClick={fecharMenu}>
             Projetos
           </a>
-          <a href="#contatos" onClick={fecharMenu}>
+          <a href="/#contatos" onClick={fecharMenu}>
             Contato
           </a>
-          <a href="#contatos" className="mobile-cta" onClick={fecharMenu}>
+          <a href="/#contatos" className="mobile-cta" onClick={fecharMenu}>
             Vamos conversar
           </a>
         </div>
