@@ -25,6 +25,7 @@ Este repositório contém a aplicação web da landing da Alcateia, com foco em:
 
 ```text
 landing-page/
+├─ .gitignore
 ├─ webapp/
 │  ├─ src/
 │  │  ├─ components/
@@ -34,6 +35,7 @@ landing-page/
 │  │  │  └─ main.tsx
 │  │  └─ styles/
 │  ├─ package.json
+│  ├─ vercel.json
 │  └─ vite.config.ts
 ├─ DOCUMENTACAO_ATUAL.md
 ├─ SECURITY.md
@@ -65,6 +67,10 @@ npm run preview
 ## Deploy
 
 Deploy de produção via Vercel.
+
+Observação importante para SPA:
+
+- o arquivo `webapp/vercel.json` define rewrite para `index.html`, garantindo que rotas diretas como `/projetos/sos-maringa` funcionem sem quebra.
 
 Ambiente já validado no projeto:
 

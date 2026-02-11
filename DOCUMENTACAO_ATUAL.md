@@ -36,6 +36,8 @@ landing-page/
 |  |     |- SosMaringaPage.css
 |  |- package.json
 |  |- package-lock.json
+|  |- vercel.json
+|- .gitignore
 |- README.md
 |- SECURITY.md
 |- DOCUMENTACAO_ATUAL.md
@@ -60,6 +62,7 @@ Dependencias centrais:
 
 - `/` -> landing principal
 - `/projetos/sos-maringa` -> pagina detalhada do produto SOS Maringa
+- rotas diretas em producao sao suportadas via rewrite SPA em `webapp/vercel.json`
 
 ### Pagina principal (`webapp/src/pages/App.tsx`)
 
@@ -126,6 +129,9 @@ Deploy em Vercel.
 
 Projeto validado:
 - `https://alcateiatec.vercel.app`
+
+Configuracao de rota:
+- `webapp/vercel.json` com rewrite de `/(.*)` para `/index.html`.
 
 ## 8) Pendencias recomendadas
 
